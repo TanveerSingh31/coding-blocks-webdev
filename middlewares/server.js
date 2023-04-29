@@ -12,14 +12,17 @@ app.use(express.static(`${__dirname}/public`));
 function m1 (req,res,next) {
     console.log("middleware 1");
     next();
+    console.log("after-middleware1")
 }
 function m2 (req,res,next) {
-    console.log("middleware 1");
+    console.log("middleware 2");
     next();
+    console.log("after-middleware2")
 }
 function m3 (req,res,next) {
-    console.log("middleware 1");
+    console.log("middleware 3");
     next();
+    console.log("after-middleware3")            // we can do task even after the middleware has called next()
 }
 
 /* middlewares are functions that executed when a request comes to the server

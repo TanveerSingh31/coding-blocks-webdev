@@ -1,0 +1,18 @@
+tables
+
+1. customer --> id, name
+2. product  --> id, name, manufacturer, price(float, allowNUll: false, default-val: 0.00)
+3.  
+
+
+
+module: {
+	
+  exports: {
+     
+     
+  }
+
+}
+
+exports = module.exports
